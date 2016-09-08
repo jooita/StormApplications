@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <Console name="STDOUT" target="SYSTEM_OUT">
+            <PatternLayout pattern="[%c] %m%n"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Root level="trace">
+            <AppenderRef ref="STDOUT" level="ERROR"/>
+        </Root>
+        <Logger name="clj-storm-spike1" level="DEBUG" additivity="false">
+            <AppenderRef ref="STDOUT" level="DEBUG"/>
+        </Logger>
+    </Loggers>
+</Configuration>
